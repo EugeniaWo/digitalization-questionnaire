@@ -1,0 +1,349 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questionnaire Report Template</title>
+    <meta name="description" content="Questionnaire Report Template">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <style>
+        body {
+            background: rgb(204, 204, 204);
+            font-family: 'Lato', Helvetica, sans-serif;
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            margin: 0 auto;
+        }
+
+        .page__container {
+            padding: 3em;
+        }
+
+        .header-info__wrapper {
+            display: flex;
+            margin-bottom: 3em;
+        }
+
+        .header-info__middle {
+            width: 40%;
+            margin-left: 3em;
+            opacity: 0.5;
+        }
+
+        .header__wrapper {
+            margin-bottom: 1em;
+        }
+
+        .label {
+            margin: 0;
+        }
+
+        .inceptit-logo {
+            width: 140px;
+            height: 100px;
+            margin-left: 5em;
+            margin-top: -2em;
+        }
+
+        .category-title {
+            padding-top: 3em;
+            margin-bottom: 1em;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .red {
+            color: #AB0552;
+        }
+
+        .score-number {
+            padding-bottom: 1em;
+        }
+
+        .score-bar-container {
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        .score-bar {
+            width: 21%;
+            background-color: #8140e8;
+        }
+
+        .score-text {
+            text-align: right;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+        }
+
+        .question-container {
+            display: flex;
+            font-size: 14px;
+            border-bottom: 1px solid #E5D8FA;
+            padding: 10px 0;
+        }
+
+        .question {
+            width: 12em;
+            min-width: 12em;
+            padding-right: 20px;
+        }
+
+        .traffic-light {
+            padding-right: 20px;
+        }
+
+        .lamp {
+            height: 15px;
+            width: 15px;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 25px;
+        }
+
+        .lampRed {
+            background-color: red;
+        }
+
+        .lampYellow {
+            background-color: yellow;
+        }
+
+        .lampGreen {
+            background-color: green;
+        }
+
+        .sum-categories {
+            display: flex;
+        }
+
+        .sum-category {
+            margin-right: 1em;
+        }
+
+        .footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: none;
+            text-align: center;
+        }
+
+        @media print {
+            .footer {
+                page-break-inside: always;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="page__container">
+            <h1>DIGITALIZATION METER - AUDIT</h1>
+            <div class="header-info__wrapper">
+                <div class="header-info__left">
+                    <div class="company-name__wrapper header__wrapper">
+                        <p class="label">Company Name:</p>
+                        <div><b>Company Name Ltd.</b></div>
+                    </div>
+
+                    <div class="date__wrapper header__wrapper">
+                        <p class="label">Created on:</p>
+                        <div><b>27. October 2020</b></div>
+                    </div>
+                </div>
+                <div class="header-info__middle">
+                    Here goes the survey description. This survey gives you a rough idea if your company is a top or
+                    a flop in terms of digitalization. Contact us for more info.
+                </div>
+
+                <div class="header-info__right">
+                    <img class="inceptit-logo"
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyMjkgMTQwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMjkgMTQwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzkwMjRGRTtzdHJva2U6IzkwMjRGRTtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQoJLnN0MXtzdHJva2U6IzAwMDAwMDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQoJLnN0MntmaWxsOiM4MTQwRTc7c3Ryb2tlOiM4MTQwRTc7c3Ryb2tlLXdpZHRoOjEuNTtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQoJLnN0M3tmaWxsOiNCMTYwRTc7c3Ryb2tlOiNCMTYwRTc7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KCS5zdDR7ZmlsbDojQjE2MEU3O3N0cm9rZTojQjE2MEU3O3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9Cgkuc3Q1e2ZpbGw6IzgxNDBFNztzdHJva2U6IzgxNDBFNztzdHJva2Utd2lkdGg6MC41O3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9Cgkuc3Q2e2ZpbGw6bm9uZTt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTM3LjUsNzguNmgtNi44VjQ1LjloNi44Vjc4LjZ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNzIuOSw3OC42aC02LjhMNTEuNCw1Ni4zdjIyLjNoLTYuOFY0NS45aDYuOGwxNC43LDIyLjNWNDUuOWg2LjhWNzguNnoiLz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xMDYuOCw2Ny43Yy0wLjEsMS43LTAuNiwzLjItMS4yLDQuNmMtMC43LDEuNC0xLjYsMi42LTIuOCwzLjZjLTEuMiwxLTIuNiwxLjgtNC4zLDIuMwoJCUM5Ni45LDc4LjgsOTUsNzksOTIuOCw3OWMtMi4yLDAtNC4yLTAuNC02LTEuMWMtMS44LTAuNy0zLjMtMS44LTQuNS0zLjFjLTEuMi0xLjQtMi4yLTMtMi45LTVjLTAuNy0xLjktMS00LjEtMS02LjV2LTIuMQoJCWMwLTIuNCwwLjMtNC42LDEtNi41czEuNy0zLjYsMi45LTVzMi44LTIuNCw0LjYtMy4yczMuOC0xLjEsNi0xLjFjMi4yLDAsNC4xLDAuMyw1LjcsMC45czMuMSwxLjQsNC4yLDIuNGMxLjIsMSwyLjEsMi4zLDIuNywzLjcKCQljMC43LDEuNCwxLjEsMywxLjIsNC42SDEwMGMtMC4xLTAuOS0wLjMtMS43LTAuNi0yLjVjLTAuMy0wLjctMC43LTEuNC0xLjMtMS45Yy0wLjYtMC41LTEuMy0wLjktMi4xLTEuMmMtMC45LTAuMy0xLjktMC40LTMuMS0wLjQKCQljLTIuNiwwLTQuNSwwLjktNS44LDIuNmMtMS4zLDEuNy0xLjksNC4zLTEuOSw3Ljd2Mi4xYzAsMS42LDAuMSwzLjEsMC40LDQuNGMwLjMsMS4zLDAuNywyLjQsMS4zLDMuMmMwLjYsMC45LDEuNCwxLjUsMi4zLDIKCQljMSwwLjUsMi4xLDAuNywzLjQsMC43YzEuMiwwLDIuMi0wLjEsMy4xLTAuNGMwLjktMC4zLDEuNi0wLjYsMi4yLTEuMWMwLjYtMC41LDEtMS4xLDEuMy0xLjhjMC4zLTAuNywwLjUtMS42LDAuNi0yLjZIMTA2Ljh6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTMyLjgsNjQuNWgtMTQuMXY4LjdoMTYuNXY1LjRoLTIzLjNWNDUuOWgyMy4ydjUuNWgtMTYuNFY1OWgxNC4xVjY0LjV6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTQ2LjUsNjcuMXYxMS41aC02LjhWNDUuOWgxMy42YzIuMSwwLDMuOSwwLjMsNS41LDAuOGMxLjYsMC41LDMsMS4zLDQuMSwyLjNjMS4xLDEsMiwyLjEsMi42LDMuNAoJCWMwLjYsMS4zLDAuOSwyLjgsMC45LDQuM2MwLDEuNi0wLjMsMy0wLjksNC4zYy0wLjYsMS4zLTEuNCwyLjQtMi42LDMuM2MtMS4xLDAuOS0yLjUsMS42LTQuMSwyLjFjLTEuNiwwLjUtMy41LDAuNy01LjUsMC43SDE0Ni41egoJCSBNMTQ2LjUsNjEuNmg2LjhjMS4xLDAsMi0wLjEsMi44LTAuNGMwLjgtMC4yLDEuNC0wLjYsMi0xYzAuNS0wLjQsMC45LTAuOSwxLjEtMS41YzAuMi0wLjYsMC40LTEuMiwwLjQtMmMwLTAuNy0wLjEtMS40LTAuNC0yCgkJcy0wLjYtMS4yLTEuMS0xLjdjLTAuNS0wLjUtMS4yLTAuOS0yLTEuMnMtMS43LTAuNC0yLjgtMC40aC02LjhWNjEuNnoiLz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xOTcuNiw1MS40aC0xMC44djI3LjJoLTYuOFY1MS40aC0xMC43di01LjVoMjguNFY1MS40eiIvPgo8L2c+CjxnPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTUxLDEyMC42aC02LjhWODcuOUg1MVYxMjAuNnoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik04NC4xLDkzLjRINzMuM3YyNy4yaC02LjhWOTMuNEg1NS44di01LjVoMjguNFY5My40eiIvPgo8L2c+CjxnPgoJPHBhdGggZD0iTTI5LjUsOTYuOWMtMC4xLDAtMC4zLTAuMS0wLjMtMC4zdi04LjNjMC0wLjEsMC4xLTAuMywwLjMtMC4zaDguM2MwLjEsMCwwLjMsMC4xLDAuMywwLjN2OC4zYzAsMC4xLTAuMSwwLjMtMC4zLDAuM0gyOS41egoJCSIvPgoJPGc+CgkJPHBhdGggZD0iTTM3LjgsODguNHY4LjNoLTguM3YtOC4zSDM3LjggTTM3LjgsODcuOWgtOC4zYy0wLjMsMC0wLjUsMC4yLTAuNSwwLjV2OC4zYzAsMC4zLDAuMiwwLjUsMC41LDAuNWg4LjMKCQkJYzAuMywwLDAuNS0wLjIsMC41LTAuNXYtOC4zQzM4LjMsODguMSwzOCw4Ny45LDM3LjgsODcuOUwzNy44LDg3Ljl6Ii8+Cgk8L2c+CjwvZz4KPHJlY3QgeD0iMjAyLjgiIHk9IjQ2LjEiIHRyYW5zZm9ybT0ibWF0cml4KDguOTc2NjQ4ZS0xMSAtMSAxIDguOTc2NjQ4ZS0xMSAxNTYuNjg4NCAyNjEuMTMzMikiIGNsYXNzPSJzdDIiIHdpZHRoPSIxMi4yIiBoZWlnaHQ9IjEyLjIiLz4KPHJlY3QgeD0iMTc4LjUiIHk9IjIxLjgiIHRyYW5zZm9ybT0ibWF0cml4KDguOTkxNTY5ZS0xMSAtMSAxIDguOTkxNTY5ZS0xMSAxNTYuNjg4NCAyMTguNTA4OSkiIGNsYXNzPSJzdDMiIHdpZHRoPSIxOC4zIiBoZWlnaHQ9IjE4LjMiLz4KPHJlY3QgeD0iMjA2LjciIHk9IjI2LjIiIHRyYW5zZm9ybT0ibWF0cml4KDkuMDE2MzQ5ZS0xMSAtMSAxIDkuMDE2MzQ5ZS0xMSAxODAuNTI2OSAyNDEuMTgxNCkiIGNsYXNzPSJzdDQiIHdpZHRoPSI4LjMiIGhlaWdodD0iOC4zIi8+CjxyZWN0IHg9IjE5Ny42IiB5PSIzLjYiIHRyYW5zZm9ybT0ibWF0cml4KDguOTc4MjQ3ZS0xMSAtMSAxIDguOTc4MjQ3ZS0xMSAxOTQuMDAwOSAyMDYuMjAwOSkiIGNsYXNzPSJzdDUiIHdpZHRoPSI0LjkiIGhlaWdodD0iNC45Ii8+CjxnPgoJPHBhdGggZD0iTTE2LDExOS43Yy0wLjEsMC0wLjMtMC4xLTAuMy0wLjNWMTA3YzAtMC4xLDAuMS0wLjMsMC4zLTAuM2gxMi40YzAuMSwwLDAuMywwLjEsMC4zLDAuM3YxMi40YzAsMC4xLTAuMSwwLjMtMC4zLDAuM0gxNnoiCgkJLz4KCTxnPgoJCTxwYXRoIGQ9Ik0yOC40LDEwN3YxMi40SDE2VjEwN0gyOC40IE0yOC40LDEwNi41SDE2Yy0wLjMsMC0wLjUsMC4yLTAuNSwwLjV2MTIuNGMwLDAuMywwLjIsMC41LDAuNSwwLjVoMTIuNAoJCQljMC4zLDAsMC41LTAuMiwwLjUtMC41VjEwN0MyOC45LDEwNi43LDI4LjcsMTA2LjUsMjguNCwxMDYuNUwyOC40LDEwNi41eiIvPgoJPC9nPgo8L2c+CjxyZWN0IGNsYXNzPSJzdDYiIHdpZHRoPSIyMjkiIGhlaWdodD0iMTQwIi8+Cjwvc3ZnPgo="></img>
+                </div>
+            </div>
+
+            <div class="score-number center">Overall Score: <b><span class="red">20.7</span>/ 100</b></div>
+
+            <div class="score-bar-container">
+                <div class="score-text score-bar">21%</div>
+            </div>
+
+            <h3 class="red center category-title">CATEGORY TITLE 1</h3>
+
+            <div class="question-container">
+                <div class="question">Lorem ipsum dolor sit amet?</div>
+                <div class="traffic-light">
+                    <div class="lamp lampRed" id="Red"></div>
+                    <div class="lamp" id="Yellow"></div>
+                    <div class="lamp" id="Green"></div>
+                </div>
+                <div class="evaluation">Donec imperdiet commodo dapibus. In eu arcu ac ligula pharetra faucibus in sed
+                    neque. Nunc ultrices suscipit arcu nec accumsan. Fusce ac aliquet elit, vel pharetra enim. </div>
+            </div>
+            <div class="question-container">
+                <div class="question">Etiam porttitor lacus in metus blandit tristique?</div>
+                <div class="traffic-light">
+                    <div class="lamp" id="Red"></div>
+                    <div class="lamp lampYellow" id="Yellow"></div>
+                    <div class="lamp" id="Green"></div>
+                </div>
+                <div class="evaluation">Fusce aliquet, lacus sed auctor sagittis, nisi purus rhoncus erat, ultrices
+                    volutpat sapien sem accumsan sapien. Nam hendrerit eros vitae ante rhoncus mollis. </div>
+            </div>
+            <div class="question-container">
+                <div class="question">Fusce non mauris nisi.</div>
+                <div class="traffic-light">
+                    <div class="lamp" id="Red"></div>
+                    <div class="lamp" id="Yellow"></div>
+                    <div class="lamp lampGreen" id="Green"></div>
+                </div>
+                <div class="evaluation">Suspendisse tincidunt at lectus auctor fringilla. Donec mauris leo, dictum vitae
+                    dolor ac, tempor vulputate nunc. Duis nec enim dolor. Etiam tincidunt fringilla sapien ac pharetra.
+                    Suspendisse potenti. Praesent mattis ex ut mi tincidunt viverra.</div>
+            </div>
+
+
+            <h3 class="red center category-title">CATEGORY TITLE 2</h3>
+
+            <div class="question-container">
+                <div class="question">Proin ultricies sem quis risus rutrum laoreet.</div>
+                <div class="traffic-light">
+                    <div class="lamp" id="Red"></div>
+                    <div class="lamp" id="Yellow"></div>
+                    <div class="lamp" id="Green"></div>
+                </div>
+                <div class="evaluation">Donec mauris leo, dictum vitae dolor ac, tempor vulputate nunc. Duis nec enim
+                    dolor. Etiam tincidunt fringilla sapien ac pharetra. Suspendisse potenti.</div>
+            </div>
+            <div class="question-container">
+                <div class="question">Vestibulum at lectus in diam pellentesque?</div>
+                <div class="traffic-light">
+                    <div class="lamp" id="Red"></div>
+                    <div class="lamp" id="Yellow"></div>
+                    <div class="lamp" id="Green"></div>
+                </div>
+                <div class="evaluation">Proin pulvinar sagittis quam vitae tincidunt. Integer condimentum nisl nec lorem
+                    volutpat, nec blandit quam accumsan. Donec sollicitudin, tellus in laoreet feugiat, libero nisi
+                    lobortis sapien, pellentesque blandit magna neque ut magna. Aliquam ultrices maximus orci, sed
+                    congue enim eleifend vel.</div>
+            </div>
+            <div class="question-container">
+                <div class="question">Suspendisse dolor sem, fermentum id enim quis.</div>
+                <div class="traffic-light">
+                    <div class="lamp" id="Red"></div>
+                    <div class="lamp" id="Yellow"></div>
+                    <div class="lamp" id="Green"></div>
+                </div>
+                <div class="evaluation">Proin pulvinar sagittis quam vitae tincidunt. Integer condimentum nisl nec lorem
+                    volutpat, nec blandit quam accumsan. Donec sollicitudin, tellus in laoreet feugiat, libero nisi
+                    lobortis sapien,Proin pulvinar sagittis quam vitae tincidunt. Integer condimentum nisl nec lorem
+                    volutpat, nec blandit quam accumsan. Donec sollicitudin, tellus in laoreet feugiat, libero nisi
+                    lobortis sapien, pellentesque blandit magna magna. Donec sollicitudin, tellus in laoreet feugiat.
+                    Vestibulum eget eleifend turpis. Nam rutrum urna eget pharetra hendrerit. Integer vitae tellus nunc.
+                    Suspendisse malesuada sem sed urna pharetra rhoncus ac ut elit.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page__container">
+            <h3 class="red center category-title">CATEGORY TITLE 3</h3>
+
+            <div class="question-container">
+                <div class="question">Aliquam vitae urna non felis malesuada dictum.</div>
+                <div class="traffic-light">
+                    <div class="lamp" id="Red"></div>
+                    <div class="lamp" id="Yellow"></div>
+                    <div class="lamp" id="Green"></div>
+                </div>
+                <div class="evaluation">Sed vestibulum egestas mi, non imperdiet dolor. Fusce hendrerit aliquet neque
+                    vel ornare. Donec ac augue ante.</div>
+            </div>
+
+            <div class="question-container">
+                <div class="question">Vivamus hendrerit eget lectus mattis.</div>
+                <div class="traffic-light">
+                    <div class="lamp" id="Red"></div>
+                    <div class="lamp" id="Yellow"></div>
+                    <div class="lamp" id="Green"></div>
+                </div>
+                <div class="evaluation">Aenean vitae accumsan ex. Nam vel ornare elit.</div>
+            </div>
+
+            <div class="question-container">
+                <div class="question">Proin nec maximus elit?</div>
+                <div class="traffic-light">
+                    <div class="lamp" id="Red"></div>
+                    <div class="lamp" id="Yellow"></div>
+                    <div class="lamp" id="Green"></div>
+                </div>
+                <div class="evaluation">Nam porttitor semper nibh. Etiam lectus neque, elementum et tempor ac, maximus
+                    eu lorem. Duis vulputate convallis metus, sit amet eleifend mi tincidunt sit amet. Duis odio diam,
+                    euismod vitae lectus in, consequat venenatis mi. Duis sed condimentum justo, nec ornare eros.</div>
+            </div>
+
+            <div class="question-container">
+                <div class="question">Aliquam id euismod arcu.</div>
+                <div class="traffic-light">
+                    <div class="lamp" id="Red"></div>
+                    <div class="lamp" id="Yellow"></div>
+                    <div class="lamp" id="Green"></div>
+                </div>
+                <div class="evaluation">Nullam cursus laoreet nibh, id ultrices mi blandit ut.</div>
+            </div>
+
+            <h3 class="red center category-title">SUMMARY</h3>
+            <div class="sum-categories">
+
+                <div class="sum-category">
+                    <div>CATEGORY TITLE 1</div>
+                    <div>Mauris et mattis augue. Proin molestie tellus sed purus vulputate, quis pellentesque odio
+                        mattis.
+                    </div>
+                </div>
+                <div class="sum-category">
+                    <div>CATEGORY TITLE 2</div>
+                    <div>Maecenas metus dolor, consectetur in massa ut, malesuada tempor odio.
+                        Ut fringilla massa.
+                    </div>
+                </div>
+                <div class="sum-category">
+                    <div>CATEGORY TITLE 3</div>
+                    <div>Vestibulum ornare ut risus aliquet. Ut a lacus vel ante dictum aliquet. Etiam malesuada finibus
+                        ligula.
+                    </div>
+                </div>
+            </div>
+
+            <p>Ut nisl nisi, eleifend nec libero eu, viverra viverra dolor. Fusce id tortor sit amet velit varius
+                sodales. Duis euismod velit ac felis accumsan, eget iaculis lacus condimentum. Nullam non varius ligula,
+                vitae consectetur ex. Etiam eu orci nec turpis hendrerit efficitur ut sed nunc. Curabitur consequat sit
+                amet eros nec mattis. Mauris facilisis quis turpis ut fermentum. Mauris interdum maximus neque id
+                molestie. Aenean aliquet erat sem, non ultricies ligula convallis ut.<br><br>
+                Vestibulum accumsan vel tellus a
+                laoreet. Nulla eu aliquam nunc, sit amet consectetur nunc. Donec aliquam, nibh sit amet rutrum
+                facilisis, urna enim lobortis mauris, ac imperdiet enim augue euismod erat. Integer consectetur justo
+                tellus, a condimentum nisi accumsan non. Aenean maximus tortor consectetur, suscipit augue a, tempus
+                diam. Pellentesque consectetur eros a mauris imperdiet laoreet. Aliquam viverra arcu tortor, a hendrerit
+                lacus iaculis in.</p>
+        </div>
+        <div class="footer">
+            <p> Get in touch: <span class="red">hello@inceptit.org</span></p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
