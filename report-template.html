@@ -68,8 +68,13 @@
             padding-bottom: 1em;
         }
 
+        .score-bar-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
         .score-bar-container {
-            width: 100%;
+            width: 80%;
             background-color: #ddd;
         }
 
@@ -106,20 +111,25 @@
             height: 15px;
             width: 15px;
             border-style: solid;
-            border-width: 1px;
+            border-width: 0.2em;
             border-radius: 25px;
+            margin-bottom: 2px;
+            border-color: #dedcdb;
         }
 
         .lampRed {
-            background-color: red;
+            background-color: #ff483b;
+            border-color: #ff483b;
         }
 
         .lampYellow {
-            background-color: yellow;
+            background-color: #fae20f;
+            border-color: #fae20f;
         }
 
         .lampGreen {
-            background-color: green;
+            background-color: #16A085;
+            border-color: #16A085;
         }
 
         .sum-categories {
@@ -136,6 +146,10 @@
             width: 100%;
             background-color: none;
             text-align: center;
+        }
+
+        .summary-text {
+            padding-top: 3em;
         }
 
         @media print {
@@ -175,8 +189,10 @@
 
             <div class="score-number center">Overall Score: <b><span class="red">20.7</span>/ 100</b></div>
 
-            <div class="score-bar-container">
-                <div class="score-text score-bar">21%</div>
+            <div class="score-bar-wrapper">
+                <div class="score-bar-container">
+                    <div class="score-text score-bar">21%</div>
+                </div>
             </div>
 
             <h3 class="red center category-title">CATEGORY TITLE 1</h3>
@@ -326,7 +342,8 @@
                 </div>
             </div>
 
-            <p>Ut nisl nisi, eleifend nec libero eu, viverra viverra dolor. Fusce id tortor sit amet velit varius
+            <p class="summary-text">Ut nisl nisi, eleifend nec libero eu, viverra viverra dolor. Fusce id tortor sit
+                amet velit varius
                 sodales. Duis euismod velit ac felis accumsan, eget iaculis lacus condimentum. Nullam non varius ligula,
                 vitae consectetur ex. Etiam eu orci nec turpis hendrerit efficitur ut sed nunc. Curabitur consequat sit
                 amet eros nec mattis. Mauris facilisis quis turpis ut fermentum. Mauris interdum maximus neque id
